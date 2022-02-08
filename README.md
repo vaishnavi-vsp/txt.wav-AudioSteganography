@@ -26,7 +26,7 @@
 <h2><strong>Features</h2></strong>
 
 * Embedding Audio
-<img src="assets/embed.PNG" height=400>
+<img src="assets/embed.PNG" height=400 width=387>
 
 * Retrieving Audio
 <img src="assets/retrieve.PNG" height=400>
