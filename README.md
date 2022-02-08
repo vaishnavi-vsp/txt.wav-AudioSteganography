@@ -6,7 +6,7 @@
 
 ---
 
-<h2><strong>Instructions to Run</h2></strong>
+<h2><strong>Instructions</h2></strong>
 
 * Extract the repository to the folder of your choice
 
