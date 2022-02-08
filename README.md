@@ -29,7 +29,7 @@
 <img src="assets/embed.PNG" height=400>
 
 * Retrieving Audio
-<img src="assets/retrieve.PNG" >
+<img src="assets/retrieve.PNG" height=400>
 
 ---
 
