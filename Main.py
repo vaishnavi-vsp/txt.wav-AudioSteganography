@@ -5,7 +5,7 @@ import audio_manipulation
 
 def main():
     print("Analyzing audio...")
-    audio = wave.open("unaltered_audio/TheMoonLanding.wav", "r")
+    audio = wave.open("sample_audio/TheMoonLanding.wav", "r")
     list = audio_parse.parseFrames(audio)
     samplerate = audio.getframerate()
     print("Encoding audio...")
@@ -21,6 +21,4 @@ def main():
     print("Audio decoded successfully. Check secret.txt file generated.")
     print("Decoded message: "+secretMessage)
     encodedAudio.close()
-
-
 main()
