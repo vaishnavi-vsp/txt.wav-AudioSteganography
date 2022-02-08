@@ -26,11 +26,13 @@
 <h2><strong>Features</h2></strong>
 
 * Embedding Audio
-<img src="assets/embed.PNG" >
+<img src="assets/embed.PNG" height=400 width=387>
 
 * Retrieving Audio
-<img src="assets/retrieve.PNG" >
+<img src="assets/retrieve.PNG" height=400>
+
 ---
+
 <h2 align="center"><b>DEVELOPED BY</b></h2><br>
 
 [![](https://img.shields.io/badge/LinkedIn-Rahul_Panchal-black?style=for-the-badge&logo=linkedin)](www.linkedin.com/in/rahul-panchal-9a1851190)
