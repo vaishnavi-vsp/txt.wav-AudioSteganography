@@ -1,20 +1,25 @@
 import wave
-import AudioParse
-import AudioSteganography
+import audio_parse
+import audio_manipulation
 
 
 def main():
-    audio = wave.open("TheMoonLanding.wav", "r")
-    list = AudioParse.parseFrames(audio)
+    print("Analyzing audio...")
+    audio = wave.open("unaltered_audio/TheMoonLanding.wav", "r")
+    list = audio_parse.parseFrames(audio)
     samplerate = audio.getframerate()
-    encodedAudio = AudioSteganography.encode(list, "test.txt")
-    AudioParse.writeNewWave(encodedAudio, samplerate, "new.wav")
+    print("Encoding audio...")
+    encodedAudio = audio_manipulation.encode(list, "test.txt")
+    audio_parse.writeNewWave(encodedAudio, samplerate, "new.wav")
     audio.close()
-
+    print("Audio encoded successfully. Check new.wav file generated.\n")
+    input("Press enter to decode")
+    print("\nDecoding audio...")
     encodedAudio = wave.open("new.wav", "r")
-    newlist = AudioParse.parseFrames(encodedAudio)
-    secretMessage = AudioSteganography.decode(newlist, "secret.txt")
-    print(secretMessage)
+    newlist = audio_parse.parseFrames(encodedAudio)
+    secretMessage = audio_manipulation.decode(newlist, "secret.txt")
+    print("Audio decoded successfully. Check secret.txt file generated.")
+    print("Decoded message: "+secretMessage)
     encodedAudio.close()
 
 
